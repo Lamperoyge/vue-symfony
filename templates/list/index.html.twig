@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}list grid {{ controller_name }}!{% endblock %}
+{% block stylesheets %}<link rel="stylesheet" href="{{ asset('build/list.css') }}" />{% endblock %}
+{% block body %}
+    <div id = "list">
+        <list-container></list-container>
+    </div>
+    <script src="{{ asset('build/list.js') }}"></script>
+{% endblock %}
